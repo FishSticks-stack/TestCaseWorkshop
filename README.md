@@ -11,6 +11,23 @@ Such as:
 * invalid order quantity
 * invalid inventory reduction error
 
+Setup
+--
+To run this project make sure to have Golang installed, click here to <a href="https://go.dev/dl/">Download</a>.
+
+Inside the Visual Studio Code terminal enter:
+```
+% go mod init TestCaseWorkshop
+% go mod tidy
+% go build
+% ./TestCaseWorkshop
+```
+
+**Remember to cd into the project before entering commands*
+<img width="1385" alt="image" src="https://github.com/FishSticks-stack/TestCaseWorkshop/assets/70287581/bd6cf20d-2106-4f8a-bdd3-e8c99cf24b6f">
+
+
+If you need more help, see the <a href="https://go.dev/doc/tutorial/getting-started">Getting Started</a> guide.
 
 Normal execution
 ---
@@ -25,10 +42,14 @@ Test Cases
 ---
 Running all three of these test cases results in all passing cases.
 
+* Valid order ✅
+* Invalid order quantity ✅
+* Invalid reduction error ✅
+  
 <img width="1170" alt="image" src="https://github.com/FishSticks-stack/TestCaseWorkshop/assets/70287581/caf110f0-e7e1-4515-bc37-5647c62e291a">
 
 
-
+Now we know the code has a valid order, quantity, and the reduction is executed correctly through these test cases.
 
 
 
