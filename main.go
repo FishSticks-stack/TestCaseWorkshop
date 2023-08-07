@@ -51,7 +51,7 @@ func ProcessOrder(order Order, PaymentProcessor PaymentProcessor, InventoryManag
 
 	// verify the order
 	if order.Quantity <= 0 {
-		return errors.New("Invalid order quantity")
+		return errors.New("invalid order quantity")
 	}
 
 	totalAmount := order.Price * float64(order.Quantity)

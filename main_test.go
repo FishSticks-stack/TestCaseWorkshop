@@ -55,9 +55,8 @@ func TestProcessesOrder(t *testing.T) {
 		err := ProcessOrder(invalidOrder, PaymentProcessor, InventoryManager)
 
 		if err == nil {
-			t.Error("ProcessOrder did not return an error for an invalid quantity.")
+			t.Error("ProcessOrder did not return an error for an invalid order quantity.")
 		}
-
 		expectError := "invalid order quantity"
 
 		if err.Error() != expectError {
